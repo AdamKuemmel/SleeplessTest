@@ -13,13 +13,36 @@ window.addEventListener("scroll", function () {
 
 window.addEventListener("scroll", function () {
   let hideAK = document.querySelector("article");
-  hideAK.classList.toggle("hiddenAK", window.scrollY > 0);
+  hideAK.classList.toggle("hiddenLogo", window.scrollY > 0);
 });
 window.addEventListener("scroll", function () {
-  let hideAK = document.getElementsById("navSleep");
-  hideAK.classList.toggle("hiddenAK", window.scrollY > 0);
+  let hideAK = document.getElementById("navSleep");
+  hideAK.classList.toggle("hiddenLogo", window.scrollY > 0);
 });
 
 $(document).ready(function () {
   $(".owl-carousel").owlCarousel();
 });
+
+//open the hamburger menu
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+  console.log("mobilemenu");
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+}
+
+//close hamburger menu on click
+const navLink = document.querySelectorAll(".nav-link");
+
+navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+function closeMenu() {
+  console.log("click worked");
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}
