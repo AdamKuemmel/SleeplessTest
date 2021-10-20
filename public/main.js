@@ -19,3 +19,7 @@ window.addEventListener("scroll", function () {
   let hideAK = document.getElementsById("navSleep");
   hideAK.classList.toggle("hiddenAK", window.scrollY > 0);
 });
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel();
+});
