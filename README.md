@@ -54,6 +54,16 @@ Go to your local host and tune in to channel 3001
 
 this project is not curently using any licensing
 
+## SEO
+
+This project uses standard SEO practices
+
+Mobile:
+![lighthouseMobile](public/img/bestSEOmobile.png)
+
+Desktop:
+![lighthouseDesktop](public/img/bestSEOdesktop.png)
+
 ## Technologies
 
 In this project you will find the following technologies and languages:
