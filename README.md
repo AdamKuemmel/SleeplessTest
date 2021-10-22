@@ -68,10 +68,10 @@ Desktop:
 
 In this project you will find the following technologies and languages:
 
-- Javascript
+- JavaScript
 - HTML
 - CSS
-- JQUERY
+- jQUERY
 - ExpressJS
 
 ## Questions
